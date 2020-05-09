@@ -36,8 +36,8 @@ public class Server {
                             ChannelPipeline channelPipeline = ch.pipeline();
                             channelPipeline.addLast(new StringDecoder());
                             channelPipeline.addLast(new StringEncoder());
-                            channelPipeline.addLast(new ServerInHandler());
-                            //channelPipeline.addLast(businessGroup, new ServerInHandler());
+//                            channelPipeline.addLast(new ServerInHandler());// 同步编程
+                            channelPipeline.addLast(businessGroup, new ServerInHandler()); // 异步编程
                         }
                     });
 

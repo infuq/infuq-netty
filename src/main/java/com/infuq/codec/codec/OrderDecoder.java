@@ -1,7 +1,7 @@
 package com.infuq.codec.codec;
 
-import com.example.codec.entity.OrderEntity;
-import com.example.codec.utils.CommonUtils;
+import com.infuq.codec.entity.OrderEntity;
+import com.infuq.codec.utils.CommonUtils;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;

@@ -1,7 +1,7 @@
 package com.infuq.codec.server;
 
-import com.example.codec.codec.OrderDecoder;
-import com.example.codec.codec.OrderEncoder;
+import com.infuq.codec.codec.OrderDecoder;
+import com.infuq.codec.codec.OrderEncoder;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

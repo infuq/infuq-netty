@@ -12,13 +12,6 @@ public class ClientInHandler extends SimpleChannelInboundHandler<String> {
 
         System.out.println("接收到服务端信息" + msg);
 
-        for (int i = 0; i < 100; i++) {
-            ctx.writeAndFlush("好好学习");
-        }
-
-        Thread.sleep(1000 * 70);
-        ctx.channel().read();
-
     }
 
     @Override

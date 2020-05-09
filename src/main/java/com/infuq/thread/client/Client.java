@@ -18,7 +18,9 @@ public class Client {
 
     public static void main(String[] args) {
 
-        EventLoopGroup group = new NioEventLoopGroup();
+        final EventLoopGroup group = new NioEventLoopGroup();
+        final EventLoopGroup businessGroup = new NioEventLoopGroup();
+
         Bootstrap bootstrap = new Bootstrap();
 
         bootstrap.group(group)
@@ -29,7 +31,7 @@ public class Client {
                 .handler(new ChannelInitializer<NioSocketChannel>() {
                     @Override
                     protected void initChannel(NioSocketChannel ch) {
-                        EventLoopGroup businessGroup = new NioEventLoopGroup();
+
 
                         ChannelPipeline channelPipeline = ch.pipeline();
                         channelPipeline.addLast(new StringDecoder());

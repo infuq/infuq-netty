@@ -1,7 +1,7 @@
 package com.infuq.codec.client;
 
 import com.alibaba.fastjson.JSON;
-import com.example.codec.entity.OrderEntity;
+import com.infuq.codec.entity.OrderEntity;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import lombok.extern.slf4j.Slf4j;
